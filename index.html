@@ -34,17 +34,29 @@
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 *, *::before, *::after { user-select: none; }
 input, textarea { user-select: text; }
-html { height: 100%; }
-body {
-  height: 100%;
+html, body {
+  width: 100%;
+  min-height: 100%;
   background: var(--bg);
+}
+body {
+  margin: 0;
+  min-height: 100dvh;
+  height: 100dvh;
+  overflow: hidden;
   color: var(--text);
   font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
-  overflow: hidden;
+  position: relative;
+  inset: auto;
+}
+#app { 
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100dvh;
+  min-height: 100dvh;
+  overflow: hidden;
 }
-#app { position: fixed; inset: 0; }
 .page {
   position: absolute;
   inset: 0;
