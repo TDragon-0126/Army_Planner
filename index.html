@@ -25,8 +25,8 @@
   --text3: #5c5775;
   --red: #e06868;
   --green: #6ec98e;
-  --safe-t: env(safe-area-inset-top, 47px);
-  --safe-b: env(safe-area-inset-bottom, 34px);
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
   --safe-r: env(safe-area-inset-right, 0px);
   --nav: 60px;
@@ -95,7 +95,6 @@ body {
 .nav {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  height: calc(var(--nav) + var(--safe-b));
   background: rgba(11, 10, 22, 0.86);
   backdrop-filter: saturate(200%) blur(28px);
   -webkit-backdrop-filter: saturate(200%) blur(28px);
